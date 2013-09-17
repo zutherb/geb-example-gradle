@@ -6,6 +6,6 @@ class ProductCatalogPage extends Page {
         results(wait: true) { $("ul.thumbnails") }
         result { i -> results[i] }
         resultLink { i -> result(i).find("a")[0] }
-        firstResultLink { resultLink(0) }
+        pizzaDetailPageLink { resultLink(0) }
     }
 }

@@ -7,6 +7,6 @@ class PizzaHomePage extends Page {
         results(wait: true) { $("li.active + li") }
         result { i -> results[i] }
         resultLink { i -> result(i).find("a")[0] }
-        firstResultLink { resultLink(0) }
+        pizzaCatalogLink { resultLink(0) }
     }
 }
