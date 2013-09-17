@@ -4,6 +4,7 @@ import geb.spock.*
 
 class GoogleSpec extends GebReportingSpec {
 
+    @Ignore
     def "the first link should be wikipedia"() {
         when:
         to GoogleHomePage
